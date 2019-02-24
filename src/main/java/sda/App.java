@@ -259,6 +259,7 @@ public class App {
 //        System.out.println("Wartości unialne: " + set);
 
 
+
     }
 }
 
