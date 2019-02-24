@@ -1,10 +1,9 @@
 package sda;
 
-import java.util.Scanner;
+import java.util.*;
 
-public class App
-{
-    public static void main( String[] args ) {
+public class App {
+    public static void main(String[] args) {
 
         // 1. Zadeklaruj trzy zmienne liczbowe (całkowite) i przypisz im wartości. Następnie wypisz wartość największej z nich.
 
@@ -155,7 +154,6 @@ public class App
 //        }
 
 
-
         //char, charAt
 //         1. Wypisz wszystkie litery angielskiego alfabetu.
 //
@@ -201,6 +199,70 @@ public class App
         // 9. Zadeklaruj i przypisz wartości dwóm zmiennym tekstowym. Następnie sprawdź,
         // czy pierwszy tekst zawiera drugi.
 
+        //*1. Napisz metodę odpowiedzialną za wyszukiwanie największej liczby z pośród wylosowanej listy 20 elementów
+        //*2. Napisz metodę odpowiedzialną za wyszukiwanie najmniejszej liczby z pośród wylosowanej listy 20 elementów
+
+//        Random random = new Random();
+//        int[] liczby = new int[20];
+//        for (int i = 0; i < 20; i++) {
+//            liczby[i] = random.nextInt(100);
+//        }
+//        System.out.println("Wylosowane wartości: " + Arrays.toString(liczby));
+//        int max = liczby[0];
+//
+//        for (int j = 0; j < liczby.length; j++) {
+//            if (liczby[j] > max) {
+//                max = liczby[j];
+//            }
+//        }
+//        System.out.println("Wartość max: " + max);
+//
+//        int min = liczby[0];
+//        for (int k = 0; k < liczby.length; k++) {
+//            if (liczby[k] < min) {
+//                min = liczby[k];
+//            }
+//        }
+//        System.out.println("Wartość min: " + min);
+//    }
+        //*3. Napisz metodę, której zadaniem będzie znalezienie unikalnych elementów z wylosowanego zbioru.
+        //Na potrzeby testowe: 1 2 1 3 4 1 2 5 6 3 ->  1 2 3 4 5 6
+        //*zaproponuj alternatywne rozwiązanie
+
+//        Random random = new Random();
+//        int [] zbior = new int[10];
+//        for (int i = 0; i < zbior.length; i++) {
+//            zbior[i] = random.nextInt(10);
+//        }
+//        System.out.println("Wylosowane wartości: " + Arrays.toString(zbior));
+//
+//        int wartosc = zbior [0];
+//        int[] tab_uniqe = new int[10];
+
+        // sposób 1:
+
+//        for (int j = 0; j < zbior.length; j++) {
+//            tab_uniqe[zbior[j]]++;
+//        }
+//        for (int i=0;i<tab_uniqe.length;i++){
+//            if (tab_uniqe[i] != 0) {
+//                System.out.println(i);
+//            }
+//        }
+
+        // sposób 2:
+
+//        Set<Integer> set = new HashSet<>();
+//        for (int j = 0; j < zbior.length; j++) {
+//            set.add(zbior[j]);
+//        }
+//        System.out.println("Wartości unialne: " + set);
+
+
     }
-    }
+}
+
+
+
+
 
